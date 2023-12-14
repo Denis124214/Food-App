@@ -40,13 +40,6 @@ class HomeFragment : Fragment() {
         onRandomMealClick ()
     }
 
-    private fun onRandomMealClick () {
-        binding.randomMealCard.setOnClickListener {
-            val intent = Intent(activity, MealActivity::class.java)
-            startActivity(intent)
-        }
-    }
-
     private fun observerRandomMeal() {
         homeMvvm.randomObserveRandomMealLiveData().observe(viewLifecycleOwner, Observer { t ->
             if (t != null) {
@@ -57,5 +50,11 @@ class HomeFragment : Fragment() {
         })
     }
 
+    private fun onRandomMealClick () {
+        binding.randomMealCard.setOnClickListener {
+            val intent = Intent(activity, MealActivity::class.java)
+            startActivity(intent)
+        }
+    }
 
 }

@@ -126,7 +126,7 @@
         android:src="@drawable/ic_youtube"
         android:layout_marginBottom="@dimen/_10sdp"/>
     
-    <com.google.android.material.progressindicator.LinearProgressIndicator
+    <androidx.core.widget.ContentLoadingProgressBar
         android:id="@+id/progress_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -141,5 +141,4 @@
 <!-- app:contentScrim="@color/accent" - Этот цвет будет использоваться в качестве фона ("scrim") под тулбаром при сворачивании.
   app:layout_scrollFlags  -  используется для настройки поведения тулбара при прокрутке. В вашем конкретном случае, (3 знач указано у меня)
     app:layout_collapseMode="parallax" указывает, что представление будет иметь эффект параллакса при прокрутке.
-    android:indeterminate="true" -  будет анимированно индицировать, что что-то происходит, но вы не знаете точное количество выполненной работы или время завершения.
 -->

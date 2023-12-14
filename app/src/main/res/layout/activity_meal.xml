@@ -39,6 +39,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add_to_fav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_favorites"
@@ -70,6 +71,7 @@
                 app:layout_constraintEnd_toStartOf="parent">
 
                 <TextView
+                    android:id="@+id/tv_category"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Category:Beef"
@@ -80,6 +82,7 @@
                     android:layout_weight="1"/>
 
                 <TextView
+                    android:id="@+id/tv_area"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Area: Algeria"
@@ -107,6 +110,7 @@
                 />
 
             <TextView
+                android:id="@+id/tv_instructions_steps"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_2sdp"

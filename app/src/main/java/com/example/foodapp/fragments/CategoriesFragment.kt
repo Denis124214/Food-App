@@ -18,7 +18,7 @@ class CategoriesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_categories, container, false)
+        return inflater.inflate(R.layout.fragment_categories, container, false) // R.layout.fragment_categories представляет идентификатор ресурса макета (layout resource identifier), который используется для создания объекта View при раздувании (inflating) макета. Этот идентификатор не является объектом Context.
     }
 
     companion object {
